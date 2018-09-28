@@ -1,0 +1,10 @@
+.git
+__pycache__
+.vscode
+.idea
+.DS_Store
+.ipynb_checkpoints
+.pytest_cache
+.mypy_cache
+.ipython
+.jupyter
