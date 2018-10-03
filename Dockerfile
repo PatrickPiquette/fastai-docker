@@ -26,6 +26,10 @@ RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
 RUN pip install --upgrade pip setuptools wheel
 
+RUN apt-get update && \
+    apt-get install -y libsm6 && \
+    apt-get install -y libxext6 && \
+    apt-get install -y libxrender1
 
 # -----------------------------------------------------------------------------
 # Some commands may need to be able to write to your home, set it to temporary folder
