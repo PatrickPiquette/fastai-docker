@@ -17,7 +17,8 @@ RUN apt-get update && \
     add-apt-repository -y ppa:deadsnakes/ppa && \
     apt-get update && \
     apt-get install -y python3.6-dev && \
-    apt-get install -y wget
+    apt-get install -y wget && \
+    apt-get install -y p7zip-full
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 
